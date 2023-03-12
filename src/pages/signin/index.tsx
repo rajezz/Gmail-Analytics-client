@@ -1,11 +1,15 @@
-import React from "react";
+import react from "react";
 import { Layout } from "../../components/Layout";
 import { PageContent } from "./styles";
+
+import { GoogleSignIn } from "../../components/GoogleSignIn";
 
 function LogIn() {
     return (
         <Layout title="Log In">
-            <PageContent>Log In page!</PageContent>
+            <PageContent>
+                <GoogleSignIn />
+            </PageContent>
         </Layout>
     );
 }
